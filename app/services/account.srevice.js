@@ -1,5 +1,10 @@
 "use strict";
 
+/** @class AccountService
+ * @desc This is an sample was created to demo the way we call API, 
+ * I will remove this comment in the next time.
+ * @param {$http} - The $http's used to call API
+ */
 var AccountService = function AccountService ($http) {
   this.$http = $http;
 
@@ -19,7 +24,7 @@ var AccountService = function AccountService ($http) {
     return this.$http.post('api/login', loginData);
   };
 
-  logoutL function () {
+  logout: function () {
     var token = this.cacheService.get('loginUser');
     return this.$http({
       method: 'POST',
