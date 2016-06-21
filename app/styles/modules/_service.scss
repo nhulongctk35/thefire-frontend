@@ -1,0 +1,50 @@
+#services {
+  background: #001F3F;
+  color: #7FDBFF;
+  
+  .section-title {
+    h3, p {
+      text-align: center;
+    }
+  }
+
+  i {
+    float:left;
+    min-width: 90px;
+    margin-right: 5px;
+  }
+
+  h3 {
+    margin-top: 0;
+    text-align: left;
+    padding-bottom: 5px;
+  }
+
+  p {
+    margin-bottom: 50px;
+    margin-left: 90px;
+    text-align: left;
+  }
+}
+
+
+.section-title {
+  padding: 30px 0;
+
+  h3 {
+    text-transform: uppercase;
+  }
+  
+  .line {
+    border-top: 3px solid $line-background;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60px;
+    background-color: $line-background;
+  }
+
+  p {
+    padding-top: 20px;
+  }
+}

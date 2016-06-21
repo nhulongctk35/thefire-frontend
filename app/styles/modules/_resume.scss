@@ -1,0 +1,27 @@
+#resume {
+  i {
+    padding-right: 20px;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    display: inline-block;
+    top: -5px;
+  }
+
+  article {
+    margin-bottom: 50px;
+  }
+
+  .info-line {
+    font-style: italic;
+  }
+
+  .divider {
+    height: 2px;
+    width: 100%;
+    background-color: $line-background;
+    margin-bottom: 20px;
+  }
+}

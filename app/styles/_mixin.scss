@@ -1,0 +1,14 @@
+@mixin backImage($image, $height: 100vh) {
+	background: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0, 0, 0, .4)) url($image);
+	height: auto;
+	width: 100%;
+	max-height: $height;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#home {
+	@include backImage('../../images/header.jpg');
+}
+
