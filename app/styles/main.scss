@@ -1,0 +1,73 @@
+$fa-font-path: '/bower_components/font-awesome/fonts';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+@import "variables";
+@import "mixin";
+@import "base";
+@import "modules/header";
+@import "modules/navigation";
+@import "modules/home";
+@import "modules/about";
+@import "modules/service";
+@import "modules/resume";
+@import "modules/work";
+@import "modules/testimonial";
+@import "modules/footer";
+@import "responsive";
+
+canvas {
+    position: absolute;
+    &:after {
+        content: "longtran";
+        display: block;
+    }
+}
+
+#canvas {
+    left: 20%;
+    top: 10%;
+}
+
+#canvas2 {
+    right: 10%;
+    top: 30%;
+}
+
+#canvas3 {
+    top: 56%;
+    right: 5%;
+}
+
+#canvas4 {
+    left: 30%;
+    top: 0;
+}
+
+#canvas5 {
+    top: 20%;
+    left: 10%;
+}
+
+#canvas6 {
+    top: 0;
+    right: 5%;
+}
+
+#canvas7 {
+    top: 30%;
+    left: 50%;
+}
+
+#canvas8 {
+    top: 20%;
+    right: 0;
+}
+
+#canvas9 {
+    bottom: 20%;
+    left: 10%;
+}

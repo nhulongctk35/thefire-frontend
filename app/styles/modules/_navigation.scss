@@ -1,0 +1,77 @@
+.navbar {
+  margin-bottom: 0;
+  min-height: 0;
+  border-bottom: 1px solid rgba(248, 248, 248,0);
+  transition: all .8s ease-out;
+}
+
+.navbar-default {
+  background-color: rgba(248,248,248,0);
+
+  .navbar-nav {
+      > .active > a, .active > a:hover, .active > a:focus {
+        color: $yellow;
+        background: transparent;
+        font-weight: $font-weight-heavy;
+      }
+
+      > li > a:hover {
+        color: $yellow;
+      }
+
+      a {
+        font-weight: $font-weight-bold;
+        font-family: $font-main;
+        color: $color-main;
+        font-size: 1.6rem;
+        transition: .7s ease-out;
+      }
+    }
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  width: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+.inbody {
+  background: rgba(0, 0, 0, .8) !important;
+  border-bottom: 2px solid $red;
+
+  .navbar-nav {
+    >li a {
+      color: $offwhite;
+    }
+  }
+}
+
+.navbar.inbody {
+  padding-top: 0;
+  padding-bottom: 0;
+
+}
+
+.skill {
+  
+  margin-bottom: 30px;
+  
+  .skill-item {
+    position: relative;
+  }
+
+  .skill-item-progress {
+    background-color: #030303;
+    height: 2px;
+    width: 100%;
+    position: relative;
+
+    .counter {
+      position: absolute;
+      right:0;
+      top: -27px;
+      display: block;
+    }
+  }
+}

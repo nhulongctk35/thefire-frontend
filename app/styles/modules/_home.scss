@@ -1,0 +1,29 @@
+#home {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, .2)), url(../../images/pebblebeachblue.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+
+  .content {
+    padding: 19% 0 23%;
+
+    hr {
+	  background-color: $line-background;
+	  height: 2px;
+	  border: 0 none;
+	  margin-bottom: 30px;
+	  margin-top: 30px;
+	  width: 100px;
+	}
+
+	h2 {
+		font-size: 4rem;
+	}
+
+	p {
+		font-weight: $font-weight-bold;
+	}
+  }
+}

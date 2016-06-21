@@ -1,0 +1,25 @@
+footer {
+  background: #131313;
+  color: #A7A7A7;
+  padding: 50px 0px 40px 0px;
+  text-align: center;
+  
+  .ontop {
+    position: relative;
+
+   a > i {
+      position: absolute;
+      top: -50px;
+      margin: 0 auto;
+    }
+  }
+
+  ul li {
+    display: inline-block;
+
+    a {
+      display: block;
+      padding: 10px 20px;
+    }
+  }
+}

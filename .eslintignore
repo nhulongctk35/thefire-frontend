@@ -1,0 +1,6 @@
+node_modules/*
+node/*
+build*/*
+dist/*
+**/coverage-reference/lcov-report/*.js
+**/coverage/lcov-report/*.js
