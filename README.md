@@ -1,5 +1,5 @@
 # Thefire - Frontend Project
-
+If you want to contribute yours code to this repo. Please contact with me and send me yours email.
 ## How to Run
 ***
 Note: `open command prompt with as administrator`
@@ -17,13 +17,15 @@ Note: `open command prompt with as administrator`
 Visit [http://localhost:9001](http://localhost:9001) and enjoy!
 
 ### Production mode
-    # Go to source folder
+
+```js
+    > Go to source folder
 	
-	# gulp html
+	> gulp html
 
-    # gulp build
+    > gulp build
 
-    # gulp serve:dist
-
+    > gulp serve:dist
+```
 
 Visit [http://localhost:9001](http://localhost:9001) and enjoy!

@@ -35,16 +35,6 @@ gulp.task('styles', () => {
     .pipe(reload({stream: true}));
 });
 
-// gulp.task('scripts', () => {
-//   return gulp.src(['app/scripts/**/*.js', 'app/app.js'])
-//     .pipe($.plumber())
-//     .pipe($.sourcemaps.init())
-//     .pipe($.babel())
-//     .pipe($.sourcemaps.write('.'))
-//     .pipe(gulp.dest('.tmp/scripts'))
-//     .pipe(reload({stream: true}));
-// });
-
 gulp.task('scripts', () => {
   return browserify({ entries: PATH.src + 'app.js', debug: true })
   .transform(babelify)
@@ -52,12 +42,6 @@ gulp.task('scripts', () => {
   .pipe(source('app.js'))
   .pipe(ngAnnotate())
   .pipe(gulp.dest(PATH.tmp));
-});
-
-gulp.task('templates', () => {
-  return gulp.src(PATH.src + '**/*.html')
-    .pipe(templateCache({ module: 'ngaythobet', root: PATH.src, moduleSystem: 'IIFE' }))
-    .pipe(gulp.dest(PATH.tmp));
 });
 
 gulp.task('lint', () => {
