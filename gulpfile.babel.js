@@ -40,7 +40,7 @@ gulp.task('scripts', () => {
   .bundle()
   .pipe(source('app.js'))
   .pipe(ngAnnotate())
-  .pipe(gulp.dest(PATH.tmp));
+  .pipe(gulp.dest(PATH.src + "/scripts/"));
 });
 
 gulp.task('lint', () => {
