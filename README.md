@@ -24,7 +24,7 @@ Install bower globaly
 
     > gulp serve
 ```
-Visit [http://localhost:9001](http://localhost:9001) and enjoy!
+Visit [http://localhost:9000](http://localhost:9000) and enjoy!
 
 ### Production mode
 ```js
@@ -37,4 +37,4 @@ Visit [http://localhost:9001](http://localhost:9001) and enjoy!
     > gulp serve:dist
 ```
 
-Visit [http://localhost:9001](http://localhost:9001) and enjoy!
+Visit [http://localhost:9001](http://localhost:9000) and enjoy!
