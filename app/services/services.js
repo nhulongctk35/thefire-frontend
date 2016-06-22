@@ -2,6 +2,8 @@
 
 var AccountService = require("./account.service");
 
-var services = angular
+var Services = angular
     .module("bstteam.services", [])
     .service('AccountService', AccountService);
+
+module.exports = Services;

@@ -8,3 +8,5 @@ var Common = Angular.module("bstteam.common", [
     'ui.bootstrap.dropdown'
 ])
 .directive('navbar', () => new NavBar());
+
+module.exports = Common;
