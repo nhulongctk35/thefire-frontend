@@ -19,17 +19,11 @@ $fa-font-path: '/bower_components/font-awesome/fonts';
 @import "modules/footer";
 @import "responsive";
 
-canvas {
+canvas#teams {
     position: absolute;
-    &:after {
-        content: "longtran";
-        display: block;
-    }
-}
-
-#canvas {
-    left: 20%;
-    top: 10%;
+    top: 20%;
+    width: 50%;
+    border: 1px solid red;
 }
 
 #canvas2 {
@@ -70,4 +64,10 @@ canvas {
 #canvas9 {
     bottom: 20%;
     left: 10%;
+},
+.canvas {
+    display: none;
+    &:hover {
+        display: block;
+    }
 }
