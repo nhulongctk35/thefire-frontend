@@ -16,7 +16,7 @@ Install bower globaly
 ```
 ### Development mode
 ```js
-    > Go to source folder
+    > Go to source folder 
 
     > npm install
 
