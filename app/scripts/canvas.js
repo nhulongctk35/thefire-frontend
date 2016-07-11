@@ -3,8 +3,20 @@
     var data = {
         values: [{
             code: 'f21d',
+            X: 0,
+            Y: 0
+        },{
+            code: 'f21d',
+            X: 100,
+            Y: 100
+        },{
+            code: 'f21d',
+            X: 150,
+            Y: 200
+        },{
+            code: 'f21d',
             X: 200,
-            Y: 34
+            Y: 100
         }]
     };
     var tipcanvas = document.getElementById('tooltip');
@@ -22,10 +34,13 @@
     function placeIconFont(values, ctx) {
         for (var i = 0; i<values.length; i++) {
             var value = data.values[i];
-            ctx.save();
-            ctx.translate(value.X, value.Y);
+            // ctx.save();
+            // ctx.translate(value.X, value.Y);
 
-            ctx.fillText(String.fromCharCode(parseInt(value.code,16)), 0, 0);
+            // ctx.fillText(String.fromCharCode(parseInt(value.code,16)), 0, 0);
+            ctx.beginPath();
+            ctx.arc(value.X, value.Y, 4, 0, Math.PI * 2, true);
+            ctx.fill();
             ctx.restore();
         }
     }
@@ -39,7 +54,7 @@
         var ctx = canvas.getContext('2d');
         ctx.textAlign = "center";
         // ctx.textBaseline="middle";
-        ctx.font  = '16px FontAwesome';
+        ctx.font  = '48px FontAwesome';
         
         ctx.fillStyle = '#000';
 
@@ -51,16 +66,19 @@
     }
 
     function handleMouseHover(e) {
-        var mouseX = parseInt(e.clientX);
+        var mouseX = parseInt(e.clientX - offsetX);
         var mouseY = parseInt(e.clientY - offsetY);
-
+        console.log({
+            x: mouseX,
+            y: mouseY
+        });
         var hint = false;
         for(var i = 0; i<data.values.length; i++) {
             var item = data.values[i];
-            var dx = Math.abs((item.X + 26) - mouseX);
-            var dy = Math.abs(mouseY - item.Y);
-            if (dx < 5 && dy<10) {
-                alert("#longtran");
+            var dx = Math.abs(item.X);
+            var dy = Math.abs(item.Y);
+            if (dx < 5 && dy< 5) {
+                alert(dx + ":" + dy);
                 tipcanvas.style.left = item.X + "px";
                 tipcanvas.style.top = item.Y + "px";
                 tipctx.clearRect(0, 0, tipcanvas.width, tipcanvas.height);
