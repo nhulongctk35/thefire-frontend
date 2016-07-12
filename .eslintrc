@@ -118,6 +118,7 @@
 	},
 	"env": {
 		"browser": true,
+		"es6": 1,
 		"node": true,
 		"jest": true,
 		"jasmine": true

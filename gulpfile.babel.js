@@ -175,6 +175,18 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
+gulp.task('dist', ['build'], () => {
+  return gulp.src('index.html')
+    .pipe(usemin({
+      css1: [minifycss()],
+      css2: [minifycss()],
+      js1: [uglify()],
+      js2: [uglify()],
+      js3: [uglify()]
+    }))
+    .pipe(gulp.dest(PATH.dist));
+});
+
 gulp.task('build', ['html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });

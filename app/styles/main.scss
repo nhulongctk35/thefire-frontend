@@ -20,10 +20,8 @@ $fa-font-path: '/bower_components/font-awesome/fonts';
 @import "responsive";
 
 canvas#teams {
-    position: absolute;
-    top: 0;
-    width: 50%;
-    border: 1px solid red;
+    background-color:red;
+    position: relative;
 }
 
 #canvas2 {
