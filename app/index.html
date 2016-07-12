@@ -32,20 +32,23 @@
     <style type="text/css">
      @font-face {
       font-family: 'FontAwesome';
-      src: url('fonts/fontawesome-webfont.ttf');
+      src: url('font/fontawesome-webfont.ttf');
       font-weight: normal;
       font-style: normal;
      }
 
-     #testimonials{font-family:FontAwesome;}
+     #teams{font-family:FontAwesome;}
     </style> 
   </head>
   <body ng-app="bstteam">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div ng-controller="AppController">
+      <div navbar></div>
+    </div>
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container" ng-controller="AppController">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expaned="false" aria-controls="navbar"></button>
           <a href="#" class="navbar-brand">
@@ -67,33 +70,14 @@
     <section id="home" class="section">
       <div class="content text-center">
         <div class="section-title">
-          <h2>We are <mark>BST </mark>TEAM</h2>
+          <h2>We are <mark>BST</mark>TEAM</h2>
           <hr>
           <p>We's created to success</p>
         </div>
       </div>
+      <canvas id="teams" class="canvas"></canvas>
+      <canvas id="tooltip" width=100 height=25></canvas>
     </section> <!-- home --> 
-
-    <section id="testimonials" class="section">
-      <canvas id="canvas">
-      </canvas>
-      <canvas id="canvas2">
-      </canvas>
-      <canvas id="canvas3">
-      </canvas>
-      <canvas id="canvas4">
-      </canvas>
-      <canvas id="canvas5">
-      </canvas>
-      <canvas id="canvas6">
-      </canvas>
-      <canvas id="canvas7">
-      </canvas>
-      <canvas id="canvas8">
-      </canvas>
-      <canvas id="canvas9">
-      </canvas>
-    </section> <!-- testimonials -->
 
     <footer>
       <div id="top">
@@ -140,8 +124,9 @@
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <script src="scripts/layer.js"></script>
-    <script src="app.js"></script>
+    <!-- <script src="scripts/layer.js"></script> -->
+    <script src="scripts/canvas.js"></script>
+    <script src="scripts/app.js"></script>
     <!-- endbuild -->
   </body>
 </html>
