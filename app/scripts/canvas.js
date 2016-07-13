@@ -35,6 +35,8 @@
     var dots = [];
     for (var i = 0; i < data.values.length; i++) {
         dots.push({
+            x: getXPixel(data.values[i].X),
+            y: getYPixel(data.values[i].Y),
             x: data.values[i].X,
             y: data.values[i].Y,
             r: 4,
@@ -87,6 +89,23 @@
         var hit = false;
         for (var i = 0; i < dots.length; i++) {
             var dot = dots[i];
+        for(var i = 0; i<data.values.length; i++) {
+            var item = data.values[i];
+            var dx = Math.abs(item.X);
+            var dy = Math.abs(item.Y);
+            if (dx < 5 && dy< 5) {
+                alert(dx + ":" + dy);
+                tipcanvas.style.left = item.X + "px";
+                tipcanvas.style.top = item.Y + "px";
+            var dx = mouseX - dot.x;
+            var dy = mouseY - dot.y;
+            console.log({
+                x: dot.x,
+                y: dot.y,
+                xx: mouseX,
+                yy: mouseY
+            });
+            if (dx * dx + dy * dy < dot.rXr) {
             var dx = Math.abs(canvasMouseX - dot.x);
             var dy = Math.abs(canvasMouseY - dot.y);
             if (dx < 5 && dy < 5) {
@@ -94,6 +113,7 @@
                 tipcanvas.style.left = (dot.x) + "px";
                 tipcanvas.style.top = (dot.y - 40) + "px";
                 tipctx.clearRect(0, 0, tipcanvas.width, tipcanvas.height);
+                //                  tipCtx.rect(0,0,tipCanvas.width,tipCanvas.height);
                 tipctx.fillText($(dot.tip).val(), 5, 15);
                 hit = true;
             }
