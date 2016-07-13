@@ -89,6 +89,8 @@
             var dot = dots[i];
             var dx = Math.abs(canvasMouseX - dot.x);
             var dy = Math.abs(canvasMouseY - dot.y);
+            var item = data.values[i];
+            
             if (dx < 5 && dy < 5) {
                 alert("#longtran");
                 tipcanvas.style.left = (dot.x) + "px";
@@ -97,9 +99,9 @@
                 tipctx.fillText($(dot.tip).val(), 5, 15);
                 hit = true;
             }
-        }
-        if (!hit) {
-            tipcanvas.style.left = "-200px";
+            if (!hit) {
+                tipcanvas.style.left = "-200px";
+            }
         }
     }
 
