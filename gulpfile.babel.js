@@ -9,6 +9,10 @@ import ngAnnotate from 'gulp-ng-annotate';
 import jshint from 'gulp-jshint';
 import templateCache from 'gulp-angular-templatecache';
 import {stream as wiredep} from 'wiredep';
+import usemin from 'gulp-usemin';
+import minifycss from 'gulp-minify-css';
+import uglify from 'gulp-uglify';
+
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -16,7 +20,7 @@ const PATH = {
   src: 'app/',
   assets: 'assets/',
   tmp: '.tmp/',
-  dist: '../resources/public/'
+  dist: 'public/'
 };
 
 gulp.task('styles', () => {

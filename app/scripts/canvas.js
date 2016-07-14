@@ -3,8 +3,8 @@
     var data = {
         values: [{
             code: 'f21d',
-            X: 0,
-            Y: 0
+            X: 10,
+            Y: 10
         },{
             code: 'f21d',
             X: 100,
@@ -12,7 +12,7 @@
         },{
             code: 'f21d',
             X: 150,
-            Y: 200
+            Y: 100
         },{
             code: 'f21d',
             X: 200,
