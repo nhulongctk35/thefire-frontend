@@ -5,10 +5,12 @@
  * I will remove this comment in the next time.
  * @param {$http} - The $http's used to call API
  */
-var AccountService = function AccountService ($http) {
-  this.$http = $http;
+export default class AccountService {
+  constructor($http) {
+    this.$http = $http;
+  }
 
-  authen: function () {
+  authen() {
     return this.$http({
       method: 'GET',
       url: 'api/authenticate',
@@ -16,7 +18,7 @@ var AccountService = function AccountService ($http) {
     });
   };
 
-  login: function () {
+  login() {
     var loginData = {
       'username': userpass.username,
       'password': userpass.password
@@ -24,7 +26,7 @@ var AccountService = function AccountService ($http) {
     return this.$http.post('api/login', loginData);
   };
 
-  logout: function () {
+  logout() {
     var token = this.cacheService.get('loginUser');
     return this.$http({
       method: 'POST',

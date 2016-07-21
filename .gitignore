@@ -5,3 +5,4 @@ dist/**/
 #results
 npm-debug.log
 *.tmp/
+public/

@@ -1,8 +1,8 @@
 "use strict";
 
-var NavBar = require("./navbar/navbar");
+import NavBar from './navbar/navbar';
 
-var Common = Angular.module("bstteam.common", [
+var Common = angular.module("bstteam.common", [
     'ui.bootstrap.tpls',
     'ui.bootstrap.modal',
     'ui.bootstrap.dropdown'

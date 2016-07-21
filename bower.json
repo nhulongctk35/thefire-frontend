@@ -17,7 +17,8 @@
     "angular-translate-storage-cookie": "~2.7.2",
     "angular-translate-storage-local": "~2.7.2",
     "AngularJS-Toaster": "angularjs-toaster#~0.4.181",
-    "angular-tags-input": "ng-tags-input#3.0.0"
+    "angular-tags-input": "ng-tags-input#3.0.0",
+    "bootstrap": "^3.3.6"
   },
   "overrides": {
     "bootstrap-sass": {

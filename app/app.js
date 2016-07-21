@@ -1,5 +1,8 @@
 "use strict";
 
+import {service} from './services/services'; // jshint ignore:line
+import {common} from './common/common'; // jshint ignore:line
+
 var AppController = function AppController ($router) {
     $router.config([
         { path: '/home', component: 'home' },
@@ -20,15 +23,10 @@ angular.module("bstteam", [
     'ngAnimate'
 ])
 .controller("AppController", AppController)
-.config(/* @ngInject */($compileProvider, $componentLoaderProvider, $translateProvider) => {
+.config(/* @ngInject */($compileProvider, $componentLoaderProvider) => {
   // disables AngularJS debug info
   $compileProvider.debugInfoEnabled(false);
 
   // set templates path
   $componentLoaderProvider.setTemplateMapping(name => `app/components/${name}/${name}.html`);
-
-  // Angular Translate
-  $translateProvider
-      .useSanitizeValueStrategy('sanitize')
-      .useMissingTranslationHandlerLog()
 });
