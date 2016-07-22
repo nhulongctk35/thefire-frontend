@@ -50,10 +50,10 @@
             // ctx.save();
             // ctx.translate(value.X, value.Y);
 
-            // ctx.fillText(String.fromCharCode(parseInt(value.code,16)), 0, 0);
-            ctx.beginPath();
-            ctx.arc(value.X, value.Y, 4, 0, Math.PI * 2, true);
-            ctx.fill();
+            ctx.fillText(String.fromCharCode(parseInt(value.code,16)), value.X, value.Y);
+            // ctx.beginPath();
+            // ctx.arc(value.X, value.Y, 4, 0, Math.PI * 2, true);
+            // ctx.fill();
             ctx.restore();
         }
     }
@@ -91,7 +91,7 @@
             var dy = Math.abs(canvasMouseY - dot.y);
             var item = data.values[i];
             
-            if (dx < 5 && dy < 5) {
+            if (dx < 10 && dy < 10) {
                 alert("#longtran");
                 tipcanvas.style.left = (dot.x) + "px";
                 tipcanvas.style.top = (dot.y - 40) + "px";

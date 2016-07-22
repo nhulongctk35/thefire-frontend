@@ -2,6 +2,7 @@
 
 import {service} from './services/services'; // jshint ignore:line
 import {common} from './common/common'; // jshint ignore:line
+import HomeController from './components/home/home';
 
 var AppController = function AppController ($router) {
     $router.config([
@@ -23,6 +24,7 @@ angular.module("bstteam", [
     'ngAnimate'
 ])
 .controller("AppController", AppController)
+.controller("HomeController", HomeController)
 .config(/* @ngInject */($compileProvider, $componentLoaderProvider) => {
   // disables AngularJS debug info
   $compileProvider.debugInfoEnabled(false);

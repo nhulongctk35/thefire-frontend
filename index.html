@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="bstteam">
+<html ng-app="bstteam" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -20,20 +20,52 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar-example">
     <div ng-controller="AppController">
       <div navbar></div>
+      <div ng-viewport></div>
     </div>
-
-    <section id="home" class="section">
-      <div class="content text-center">
+    <section id="group" class="section">
+      <div class="container text-center">
         <div class="section-title">
+          <h2>Create group</h2>
+          <div class="line"></div>
+          <button type="button" class="btn btn-primary btn-lg active">Create</button>
         </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <i class="fa fa-picture-o fa-4x"></i>
+            <h3>PHOTOGRAPHY</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus illo alias, maxime accusantium vero labore inventore animi accusamus. Corporis necessitatibus ullam magnam adipisci quas soluta eos, quos in id obcaecati!</p>
+          </div>
+          <div class="col-md-4 ">
+            <i class="fa fa-product-hunt fa-4x"></i>
+            <h3>BRANDING</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, ea voluptatibus unde quos velit laborum ullam dolorem ipsa reiciendis molestiae iste eum culpa totam nam optio eaque iure pariatur adipisci.</p>
+          </div>
+          <div class="col-md-4 ">
+            <i class="fa fa-camera-retro fa-4x"></i>
+            <h3>GRAPHIC DESIGN</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eligendi minus molestiae tempora sed, consequatur aut dolor omnis! Nam perspiciatis iure dolore, eos incidunt sequi accusamus soluta placeat repellendus necessitatibus.</p>
+          </div>
+          <div class="col-md-4 ">
+            <i class="fa fa-tablet fa-4x"></i>
+            <h3>WEB DEVELOPMENT</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam dicta, ducimus, sapiente quae dolore vero quibusdam maxime. Beatae, a quia reprehenderit accusamus eum dolor eligendi voluptate culpa error mollitia dolores.</p>
+          </div>
+          <div class="col-md-4 ">
+            <i class="fa fa-youtube fa-4x"></i>
+            <h3>VIDEO EDITION</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, culpa, illum! Magnam quis ea nisi, omnis cum sint quia reiciendis. Cumque quidem doloremque modi deserunt, aperiam veniam laborum dignissimos quis.</p>
+          </div>
+          <div class="col-md-4 ">
+            <i class="fa fa-apple fa-4x"></i>
+            <h3>APP DESIGN</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloribus odit maiores ipsam quis, numquam accusantium magnam, id laudantium eligendi quo cupiditate quaerat deserunt enim. Non repudiandae quis quaerat, libero.</p>
+          </div>
+        </div> <!-- row -->
       </div>
-      <canvas id="teams" class="canvas"></canvas>
-      <canvas id="tooltip" width=100 height=25></canvas>
-    </section> <!-- home --> 
-
+    </section> <!-- service -->
     <footer>
       <div id="top">
         <a href="#home"><i class="fa fa-angle-double-up fa-3x"></i></a>
@@ -59,7 +91,6 @@
     <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script type="text/javascript" src="bower_components/AngularJS-Toaster/toaster.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
-    
     <!-- endbuild -->
     
     <!-- build:js2 app/app.min.js -->

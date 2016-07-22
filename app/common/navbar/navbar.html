@@ -1,26 +1,19 @@
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
       <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span> <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="http://google.com.vn" target="_blank">
-            <img class="logo" ng-src="assets/images/logo.png" />
-          </a>
-          <a class="navbar-brand" href="#/">
-            <span>BST-TEAM</span> <span class="navbar-version"></span>
-          </a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-        <ul class="nav navbar-nav">
-          <li class="active">
-            <a href="#/home">
-              <span class='glyphicon glyphicon-home' aria-hidden="true"></span>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expaned="false" aria-controls="navbar"></button>
+        <a href="#" class="navbar-brand">
+          <img src=".tmp/assets/images/logo.png">
+        </a>
+      </div> <!-- navbar-header -->
+
+      <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Find group ..." class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Search</button>
+        </form>
+      </div> <!-- navbar-collapse -->
     </div>
-  </nav>
+  </nav> <!-- navbar -->
